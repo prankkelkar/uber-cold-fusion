@@ -1,0 +1,11 @@
+version: '2'
+
+services:
+
+  uber:
+    image: prasanna025153/uber-cold-fusion:run
+    volumes:
+      - ./config:/uber
+    ports:
+      - "7000:7000"
+    restart: always
