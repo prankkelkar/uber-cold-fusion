@@ -83,5 +83,11 @@ The instructions provided below specify the steps build following:
      
 _**Note:** After ensuring pods have started, direct your Web browser to the Uber-app at `http://<HOST_IP>:<PORT>`._
 
+#### Authors
+  * Sayuli Keny
+  * Apurva Sawant
+  * Siddhi Borkar
+  * Prasanna Kelkar
+
 ## References
 https://github.com/uber/Python-Sample-Application
