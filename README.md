@@ -13,7 +13,7 @@ The instructions provided below specify the steps build following:
 #### 1.1) Clone this repo
   ```sh
     export CURDIR=$PWD
-    git clone url
+    git clone https://github.com/prankkelkar/uber-cold-fusion.git
     cd uber-cold-fusion
   ```
 
