@@ -30,6 +30,18 @@ The instructions provided below specify the steps build following:
     #Use -d flag instead of -it to start in daemon mode
     docker run -it -p 7001:7000 -v $CURDIR/config:/uber uber-image
   ```
+ * Creating a container using above docker-hub image for running service
+  ```sh
+    docker run -it -p 7001:7000 -v $CURDIR:/uber prasanna025153/uber-cold-fusion:run
+  ```
+ 
+  * Creating a container using above docker-hub image for running test cases
+  ```sh
+    docker run -it -p 7001:7000 -v $CURDIR:/uber prasanna025153/uber-cold-fusion:test
+  ```
+  
+   _**Note:**_ Output will be copied in your current directory name `Python-Sample-Application`
+  
 
 #### 1.4) Dockerhub
 * Pushing images to dockerhub
