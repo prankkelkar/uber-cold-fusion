@@ -32,7 +32,7 @@ The instructions provided below specify the steps build following:
   ```
  * Creating a container using above docker-hub image for running service
   ```sh
-    docker run -it -p 7001:7000 -v $CURDIR:/uber prasanna025153/uber-cold-fusion:run
+    docker run -it -p 7001:7000 -v $CURDIR/config:/uber prasanna025153/uber-cold-fusion:run
   ```
  
   * Creating a container using above docker-hub image for running test cases
@@ -68,7 +68,7 @@ The instructions provided below specify the steps build following:
      docker-compose up
     ```
     _**Note:**_ Incase UI is not visible exec into running container and run `curl http://127.0.0.1:7000/`
-   ```
+  
 * Stop docker-compose  
 
     ```sh
@@ -79,7 +79,7 @@ The instructions provided below specify the steps build following:
       cd $CURDIR/kubernetes
       kubectl apply -f secrets.yaml
       kubectl apply -f deployment.yaml
-     ```
+    ```
      
 _**Note:** After ensuring pods have started, direct your Web browser to the Uber-app at `http://<HOST_IP>:<PORT>`._
 
