@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: uber-service
+spec:
+  ports:
+  - port: 7000
+    nodeport: 7000
+    targetPort:  uber-port
+    protocol: TCP
+  selector:
+    app: uber
+  type: Nodeport
